@@ -134,6 +134,7 @@ img {
     width: 100%;
     background: transparent;
     z-index: 999;
+    background: var(--brown);
 }
 
 .header .header_wrapper{
@@ -172,8 +173,48 @@ img {
      
 }
 
+.header .toggle_menu{
+    display: none
+}
+
+.header .toggle_menu span{
+    width: 3rem;
+    height: 0.3rem;
+    background-color: var(--prima);
+    display: block;
+    border-radius: 5rem;
+}
+
+.header .toggle_menu span:nth-child(2){
+    margin: 0.5rem 0;
+}
+
 @media screen and (max-width: 500px){
     .header .header_nav{
+        background: var(--brown);
+        position: absolute;
+        right: -100rem;
+        width: 100%;
+        top: 13rem;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header .header_nav ul{
+        display: flex;
+        flex-direction: column;
+        transform: translateY(-10rem);
+
+
+    }
+
+    .header .toggle_menu{
+        display: unset;
+    }
+
+    .header .bilog{
         display: none;
     }
 }
@@ -271,6 +312,8 @@ img {
     right: 0;
     z-index: -1;
 }
+
+
 
 @media screen and (max-width: 500px){
     .banner{
@@ -484,11 +527,11 @@ img {
         .program .program_img{
             padding-left: 0;
             margin: 0 auto;
+        }    
+
+        .program .program_wrapper a{
+            text-align: center;
         }
-
-
-    
-    
     }
 
 
@@ -698,7 +741,7 @@ img {
     }
 
     .footer .footer_input form a i{
-        transform: translateX(18.5rem);
+        transform: translateX(16.5rem);
     }
 
     .footer .footer_input form input{
@@ -764,6 +807,15 @@ img {
 .btn.bg_primary {
     background: var(--prima);
     color: var(--light);
+}
+
+@media screen and (max-width: 500px){
+    .btn{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
 }
 
 
