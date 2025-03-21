@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" >
         <div class="container">
             <div class="header_wrapper">
                 <div class="branding">
@@ -20,10 +20,10 @@
                 <div class="header_nav">
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Programs</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">Newsletters</a></li>
+                        <li><a href="#abt" class="abt1">About</a></li>
+                        <li><a href="#program" class="program2">Programs</a></li>
+                        <li><a href="#events" class="events2">Events</a></li>
+                        <li><a href="#footer" class="footer2">Newsletters</a></li>
                     </ul>
                 </div>
                 <span class="bilog"></span>
@@ -35,6 +35,29 @@
             </div>
         </div>
     </header>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact_forms">
+                <div class="contact_button">
+                    <span>Contact Us</span>
+                </div>
+
+
+                <form action="">
+                    <h2>Get in touch</h2>
+                    <input type="text" placeholder="Name:">
+                    <input type="text" placeholder="Address:">
+                    <textarea placeholder="Message" ></textarea>
+                    <div class="contact_forms--btn">
+                        <button class="btn bg-primary">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="backdrop"></div>
 
     <section class="banner">
         <div class="container">
@@ -53,11 +76,11 @@
                 </div>
                 <img src="/img/slide3.png" alt="" />
             </div>
-            <a href="" class="contact_us">Contact Us</a>
+            <!-- <a href="" class="contact_us">Contact Us</a> -->
         </div>
     </section>
 
-    <section class="abt">
+    <section class="abt" id="abt">
         <div class="container">
             <div class="abt_wrapper">
                 <h3>About Us</h3>
@@ -97,7 +120,7 @@
         </div>
     </section>
 
-    <section class="program">
+    <section class="program" id="program">
         <div class="container">
             <div class="program_wrapper">
                 <div class="program_img">
@@ -137,7 +160,7 @@
     </section>
 
 
-    <section class="events">
+    <section class="events" id="events">
         <div class="container">
             <h3>Events</h3>
             <div class="events_wrapper">
@@ -185,7 +208,7 @@
         </div>
     </section>
 
-    <section class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer_wrapper">
                 <div class="footer_details">
@@ -219,7 +242,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script src="/script.js"></script>
 
